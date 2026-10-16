@@ -1,0 +1,14 @@
+#ifndef HT_ISTFT_COMPENSATE_CROP_TILING_H
+#define HT_ISTFT_COMPENSATE_CROP_TILING_H
+#include "register/tilingdata_base.h"
+namespace optiling {
+BEGIN_TILING_DATA_DEF(HtIstftCompensateCropTilingData)
+    TILING_DATA_FIELD_DEF(uint32_t, channels);
+    TILING_DATA_FIELD_DEF(uint32_t, inputLength);
+    TILING_DATA_FIELD_DEF(uint32_t, outputLength);
+    TILING_DATA_FIELD_DEF(uint32_t, cropStart);
+    TILING_DATA_FIELD_DEF(uint32_t, tileLength);
+END_TILING_DATA_DEF;
+REGISTER_TILING_DATA_CLASS(HtIstftCompensateCrop,HtIstftCompensateCropTilingData)
+}
+#endif

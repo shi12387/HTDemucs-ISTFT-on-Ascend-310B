@@ -1,0 +1,7 @@
+/IstftStandalone/
+/bin/
+/test_data/
+/results/
+*.log
+__pycache__/
+*.pyc
